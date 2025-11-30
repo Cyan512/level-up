@@ -1,5 +1,5 @@
 import { type JSX } from 'react';
 
-export default function UsersPage(): JSX.Element {
+export default function ProfilePage(): JSX.Element {
         return <>UsersPage</>;
 }

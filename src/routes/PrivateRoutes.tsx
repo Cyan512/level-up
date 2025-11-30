@@ -6,8 +6,10 @@ import {
         RulesPage,
         ScoreBoardPage,
         SettingsPage,
+        AppearancePage,
+        PrivacyPage,
         UserProfilePage,
-        UsersPage,
+        ProfilePage,
 } from '@/ui/pages/private';
 
 const privateRoutes: RouteObject[] = [
@@ -33,14 +35,24 @@ const privateRoutes: RouteObject[] = [
                         {
                                 path: 'settings',
                                 element: <SettingsPage />,
+                                children: [
+                                        {
+                                                path: 'appearance',
+                                                element: <AppearancePage />,
+                                        },
+                                        {
+                                                path: 'privacy',
+                                                element: <PrivacyPage />,
+                                        },
+                                ],
+                        },
+                        {
+                                path: 'users',
+                                element: <ProfilePage />,
                         },
                         {
                                 path: 'user',
                                 element: <UserProfilePage />,
-                        },
-                        {
-                                path: 'users',
-                                element: <UsersPage />,
                         },
                 ],
         },

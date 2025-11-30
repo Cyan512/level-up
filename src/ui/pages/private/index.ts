@@ -3,8 +3,10 @@ import NotificationsPage from './notifications/NotificationsPage';
 import RulesPage from './rules/RulesPage';
 import ScoreBoardPage from './scoreboard/ScoreBoardPage.tsx';
 import SettingsPage from './settings/SettingsPage';
+import AppearancePage from './settings/pages/appearance/AppearancePage.tsx';
+import PrivacyPage from './settings/pages/privacy/PrivacyPage.tsx';
 import UserProfilePage from './users/UserProfilePage';
-import UsersPage from './users/UsersPage';
+import ProfilePage from './profile/ProfilePage.tsx';
 
 export {
         ChallengesPage,
@@ -12,6 +14,8 @@ export {
         RulesPage,
         ScoreBoardPage,
         SettingsPage,
+        AppearancePage,
+        PrivacyPage,
         UserProfilePage,
-        UsersPage,
+        ProfilePage,
 };
